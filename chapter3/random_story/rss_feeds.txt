@@ -1,0 +1,3 @@
+http://ascii.jp/rss.xml
+http://ascii.jp/biz/rss.xml
+http://ascii.jp/tech/rss.xml

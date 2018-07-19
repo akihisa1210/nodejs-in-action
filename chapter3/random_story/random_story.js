@@ -16,7 +16,7 @@ function checkForRSSFile() {
 };
 
 /**
- * Read RSS feed url file.
+ * Read a file which contains RSS feed url.
  * @param {string} configFilename
  */
 function readRSSFile(configFilename) {
@@ -46,7 +46,7 @@ function downloadRSSFeed(feedUrl) {
 };
 
 /**
- * Parse RSS feed and set into an array.
+ * Parse RSS feed.
  * @param {string} rss
  * @return {*}
  */

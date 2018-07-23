@@ -9,12 +9,7 @@ const server = http.createServer(function(req, res) {
   const url = parse(req.url);
   const path = join(root, url.pathname);
   const stream = fs.createReadStream(path);
-  stream.on('data', function(chunk) {
-    res.write(chunk);
-  });
-  stream.on('end', function() {
-    res.end();
-  });
+  stream.pipe(res);
 });
 
 server.listen(3000);

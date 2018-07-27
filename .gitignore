@@ -1,2 +1,5 @@
 node_modules
 .vscode
+chapter4/key-cert.pem
+chapter4/key.pem
+chapter5/.tasks

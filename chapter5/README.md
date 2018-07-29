@@ -39,10 +39,9 @@ node todo.js list
 日報は MySQL の timetrack データベースに保存される。
 
 ```
+# MySQL のユーザー: myuser@localhost/mypassword
 # MySQL に timetrack データベースを作成する。
 CREATE DATABASE timetrack;
-
-# MySQL の myuser ユーザー（パスワード: mypassword）に、timetrack へのアクセス権を与える。
 
 cd timetrack
 node timetrack.js
@@ -51,3 +50,20 @@ node timetrack.js
 ```
 
 ※日本語は文字化けします。
+
+# 5.2.2 PostgreSQL
+
+## fakeuser/fakeuser.js
+
+ダミーユーザーデータ生成ツール。
+ダミーデータは PostgreSQL の mydatabase データベースに保存される。
+
+```
+# PostgreSQL のユーザー: postgres@localhost/root
+# PostgreSQL に mydatabase データベースを作成する。
+# mydatabase に users テーブルを作成する。
+create table users (id SERIAL, name TEXT NOT NULL, age INTEGER NOT NULL, city TEXT NOT NULL);
+
+cd fakeuser
+node fakeuser.js
+```

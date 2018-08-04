@@ -4,7 +4,7 @@
 
 ## counter.js
 
-アクセス回数を表示するサーバー。  
+アクセス回数を表示するサーバー。
 アクセス回数は変数に保存される。
 
 ```
@@ -16,7 +16,7 @@ curl localhost:3000
 
 ## todo/todo.js
 
-コマンドライン式の todo リストツール。  
+コマンドライン式の todo リストツール。
 todo はファイル (todo/.tasks) に保存される。
 
 ```
@@ -67,3 +67,11 @@ create table users (id SERIAL, name TEXT NOT NULL, age INTEGER NOT NULL, city TE
 cd fakeuser
 node fakeuser.js
 ```
+
+# 5.3 NoSQL データベース
+
+# 5.3.1 Redis
+
+## redis/redis.js
+
+redis への接続とデータ登録、データ取得のテスト。

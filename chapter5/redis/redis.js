@@ -1,5 +1,12 @@
 const redis = require('redis');
-const client = redis.createClient(6379, 'localhost');
+const redisHost = 'localhost';
+const redisPort = 6379;
+const redisPassword = 'hoge';
+const client = redis.createClient({
+  'host': redisHost,
+  'port': redisPort,
+  'auth_pass': redisPassword,
+});
 
 client.on('error', (err) => {
   console.log('Error ' + err);
